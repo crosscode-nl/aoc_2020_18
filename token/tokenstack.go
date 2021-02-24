@@ -22,10 +22,10 @@ func (ts *Stack) Print() {
 	for _,t:=range ts.tokens {
 		switch t.Type() {
 			case Number : {
-				fmt.Printf("%d",t.number)
+				fmt.Printf("%d ",t.number)
 			}
 			case Operator: {
-				fmt.Printf("%s",string(t.Operator()))
+				fmt.Printf("%s ",string(t.Operator()))
 			}
 		}
 	}
